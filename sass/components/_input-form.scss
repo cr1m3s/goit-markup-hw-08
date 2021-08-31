@@ -1,0 +1,148 @@
+.input__field {
+  margin-bottom: 10px;
+  @include flex-func(false, false, column, false);
+}
+
+.input__title {
+  @include flex-func(false, false, column, false);
+}
+
+.input__text {
+  padding-bottom: 4px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 12px;
+  color: $grey;
+}
+
+.input__absolute {
+  width: 100%;
+  position: relative;
+}
+
+.input__input {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  padding-left: 39px;
+  border: 1px solid $modal-window-border-color;
+
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border-color $hover-timing $animation-func, opacity $hover-timing $animation-func;
+}
+
+.input__input:hover,
+.input__input:focus {
+  border-color: $blue;
+}
+
+.input__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 11px;
+
+  fill: $font-color;
+  transition: fill $hover-timing $animation-func, opacity $hover-timing $animation-func;
+}
+
+.input__input:hover + .input__svg,
+.input__input:focus + .input__svg {
+  @include fill_func();
+}
+
+.input__text-area {
+  resize: none;
+  border: 1px solid $modal-window-border-color;
+  border-radius: 4px;
+  padding-left: 5px;
+  padding: 12px 16px;
+  font-size: 14px;
+
+  cursor: pointer;
+  transition: border-color $hover-timing $animation-func, opacity $hover-timing $animation-func;
+}
+
+.input__text-area:hover,
+.input__text-area:focus {
+  border-color: $blue;
+}
+
+.policy-checkbox {
+  margin-bottom: $default-gap;
+  margin-top: 20px;
+  width: 100%;
+  @include flex-func(center, center, row, false);
+
+  .policy-checkbox__label {
+    display: inherit;
+  }
+}
+
+.policy-checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.custom-icon {
+  margin-top: -1px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $black;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: background-image $hover-timing $animation-func,
+    background-color $hover-timing $animation-func, border $hover-timing $animation-func;
+}
+
+.policy-checkbox__input:checked + .custom-icon {
+  background-image: url('../images/icon_check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $blue;
+  border: none;
+}
+
+.policy-checkbox__title {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: $grey;
+  margin: 0 7px;
+  font-weight: 400;
+}
+
+.policy-checkbox__link {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.policy-checkbox__link:link,
+.policy-checkbox__link:visited,
+.policy-checkbox__link:hover,
+.policy-checkbox__link:active {
+  color: $blue;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.input__buttom_submit {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-checkbox {
+    margin-top: 25px;
+  }
+
+  .policy-checkbox__title {
+    font-size: 14px;
+  }
+
+  .policy-checkbox__link {
+    font-size: 14px;
+  }
+}

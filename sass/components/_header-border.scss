@@ -1,0 +1,39 @@
+.header_border {
+  border-bottom: solid 1px $header-border;
+}
+
+.header {
+  padding: 16px 0;
+  .top-header {
+    @include flex-func(space-between, center, false, false);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .header {
+    padding: 18px 0;
+  }
+
+  .top-header {
+    @include flex-func(center, center, false, false);
+
+    &__info {
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
+
+  .top-header {
+    @include flex-func(false, center, false, false);
+
+    &__info {
+      @include flex-func();
+      margin-left: 93px;
+    }
+  }
+}

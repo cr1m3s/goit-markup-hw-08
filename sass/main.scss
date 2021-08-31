@@ -1,0 +1,34 @@
+@import './utils/_variables';
+
+@import './base/_global-styles';
+@import './base/modern-normalize.css';
+
+@import './utils/_fonts';
+@import './utils/_mixin';
+@import './utils/_placeholder';
+
+@import './components/_logo';
+@import './components/_header-border';
+@import './components/_header-links';
+@import './components/_contact-us';
+@import './components/_current';
+
+@import './components/_top-bar';
+@import './components/_buttons';
+@import './components/_backdrop';
+@import './components/_input-form';
+
+@import './components/_features-section';
+
+@import './components/_service';
+
+@import './components/_social-media-lists';
+@import './components/_team';
+
+@import './components/_clients';
+
+@import './components/_footer';
+
+@import './components/_projects';
+@import './components/_portfolio-buttons-list';
+@import './components/_mobile-menu';

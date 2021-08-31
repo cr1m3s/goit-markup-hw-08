@@ -1,0 +1,75 @@
+.contact-us {
+  margin-left: auto;
+
+  .contact-us__item {
+    color: $grey;
+
+    .contact-us__link {
+      @include flex-func(center, center, row, false);
+
+      font-weight: 500;
+
+      transition: fill $hover-timing $animation-func, color $hover-timing $animation-func;
+
+      .contact-us__icon {
+        fill: $grey;
+        margin-right: 10px;
+
+        transition: fill $hover-timing $animation-func;
+      }
+    }
+
+    .contact-us__item:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    .contact-us__link:hover,
+    .contact-us__link:focus {
+      color: $blue;
+      @include fill_func();
+    }
+
+    .contact-us__link:hover .contact-us__icon,
+    .contact-us__link:focus .contact-us__icon {
+      @include fill_func();
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-us {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .contact-us {
+    @include flex-func(flex-start, flex-start, column, false);
+  }
+
+  .contact-us__item {
+    @include flex-func(flex-start, flex-start, row, false);
+  }
+
+  .contact-us__item:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .contact-us__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us__item {
+    display: inline-block;
+  }
+
+  .contact-us__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .contact-us__link {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,27 @@
+.top-header__links {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @include flex-func();
+  .top-header__link-item {
+    display: block;
+
+    .top-header__nav-link {
+      font-size: 14px;
+      font-weight: 500;
+
+      transition: color $hover-timing $animation-func, fill $hover-timing $animation-func;
+    }
+
+    .top-header__nav-link:hover,
+    .top-header__nav-link:focus {
+      color: $blue;
+      @include fill_func();
+    }
+  }
+
+  .top-header__link-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}

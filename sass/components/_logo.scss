@@ -1,0 +1,16 @@
+.logo {
+  &__text {
+    @extend %logo;
+    color: $black;
+  }
+
+  &__text--blue {
+    @extend %logo;
+    color: $blue;
+  }
+
+  &__text--white {
+    @extend %logo;
+    color: $white;
+  }
+}

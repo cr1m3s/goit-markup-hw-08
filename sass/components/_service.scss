@@ -1,0 +1,47 @@
+.service {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  @include flex-func(center, false, column, false);
+  padding-bottom: 67px;
+}
+
+.service__list {
+  @include flex-func(space-between, false, false, false);
+  margin: 0;
+  padding: 0;
+}
+
+.service__img {
+  border: none;
+  vertical-align: bottom;
+}
+
+.service__element {
+  overflow: hidden;
+}
+
+.service__link {
+  position: relative;
+}
+
+.service__container {
+  position: absolute;
+  bottom: 0;
+  padding: 27px 0;
+
+  width: 100%;
+
+  @include flex-func(center, false, false, false);
+  background-color: $dark-bg;
+  opacity: 0.8;
+}
+
+.service__text {
+  font-size: 14px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.8;
+}

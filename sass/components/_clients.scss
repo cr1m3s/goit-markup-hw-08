@@ -1,0 +1,102 @@
+.svg-list {
+  @include flex-func(center, center, row, wrap);
+  width: 450px;
+}
+
+.svg-list__item {
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+.svg-list__item:not(:first-child) {
+  transition: fill $hover-timing $animation-func;
+}
+
+.svg-list__item:not(:nth-child(-n + 2)) {
+  margin-top: $default-gap;
+}
+
+.svg-list__item:not(:nth-child(2n)) {
+  margin-right: $default-gap;
+}
+
+.svg-list__link {
+  height: 92px;
+  width: 210px;
+  border: 1px solid $svg-grey;
+  box-sizing: border-box;
+  border-radius: 4px;
+  @include flex-func(center, center, row, false);
+
+  transition: border $hover-timing $animation-func;
+}
+
+.svg-list__link:hover,
+.svg-list__link:focus {
+  border: 1px solid $blue;
+  cursor: pointer;
+}
+
+.svg-list__logo {
+  fill: $svg-grey;
+  transition: fill $hover-timing $animation-func;
+}
+
+.svg-list__link:hover .svg-list__logo,
+.svg-list__link:focus .svg-list__logo {
+  @include fill_func();
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .svg-list {
+    width: 738px;
+  }
+
+  .svg-list__item {
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 0;
+  }
+
+  .svg-list__item:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .svg-list__item:not(:nth-child(-n + 2)) {
+    margin-top: 0;
+  }
+
+  .svg-list__item:not(:nth-child(3n)) {
+    margin-right: $default-gap;
+  }
+
+  .svg-list__item:not(:nth-child(-n + 3)) {
+    margin-top: $default-gap;
+  }
+
+  .svg-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .svg-list {
+    @include flex-func(space-between, center, row, nowrap);
+    width: 1170px;
+  }
+
+  .svg-list__item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin: 0;
+  }
+
+  .svg-list__item:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .svg-list__item:not(:nth-child(-n + 2)) {
+    margin-top: 0;
+  }
+
+  .svg-list__link {
+    width: 170px;
+  }
+}

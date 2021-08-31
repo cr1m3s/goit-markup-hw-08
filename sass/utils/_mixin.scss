@@ -1,0 +1,24 @@
+@mixin fill-func($link: 'fill', $bg-col: $blue) {
+  #{$link}: $bg-col;
+}
+
+@mixin hover-func($link: 'background-color', $bg-col: $blue) {
+  #{$link}: $bg-col;
+}
+
+@mixin flex-func($justify-c: false, $align-i: false, $flex-d: false, $wrap: false) {
+  display: flex;
+
+  @if ($justify-c) {
+    justify-content: $justify-c;
+  }
+  @if ($align-i) {
+    align-items: $align-i;
+  }
+  @if ($flex-d) {
+    flex-direction: $flex-d;
+  }
+  @if ($wrap) {
+    flex-wrap: $wrap;
+  }
+}

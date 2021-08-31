@@ -1,0 +1,8 @@
+.buttons__list {
+  @include flex-func(center, false, false, false);
+  margin-bottom: 50px;
+}
+
+.buttons_item:not(:last-child) {
+  margin-right: 8px;
+}
