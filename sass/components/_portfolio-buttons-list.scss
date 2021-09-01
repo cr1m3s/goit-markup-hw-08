@@ -1,8 +1,30 @@
+.portfolio-container {
+  @include flex-func(center, center, column, false);
+}
+
 .buttons__list {
-  @include flex-func(center, false, false, false);
+  @include flex-func(flex-start, false, false, wrap);
   margin-bottom: 50px;
+}
+
+.buttons_item:not(:nth-child(-n + 3)) {
+  margin-top: 15px;
 }
 
 .buttons_item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    @include flex-func(center, center, false, nowrap);
+  }
+
+  .buttons_item {
+    margin-top: 0;
+  }
+
+  .buttons_item:not(:nth-child(-n + 3)) {
+    margin-top: 0;
+  }
 }

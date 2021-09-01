@@ -1,20 +1,19 @@
 .projects__list {
-  @include flex-func(false, false, false, wrap);
+  @include flex-func(center, center, false, wrap);
   margin: 0;
   padding: 0;
 }
 
 .project__card {
-  flex-basis: calc(100% / 3 - 2 * #{$default-gap});
-
   transition: box-shadow $hover-timing $animation-func;
+  width: 450px;
 }
 
-.project__card:not(:nth-child(3n)) {
-  margin-right: $default-gap;
+.portfolio-icon {
+  width: 100%;
 }
 
-.project__card:not(:nth-child(-n + 3)) {
+.project__card:not(:first-child) {
   margin-top: $default-gap;
 }
 
@@ -99,4 +98,42 @@
   color: $grey;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__card {
+    flex-basis: calc(100% / 2 - 2 * #{$default-gap});
+    width: 354px;
+  }
+
+  .project__card:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .project__card:not(:nth-child(2n)) {
+    margin-right: $default-gap;
+  }
+
+  .project__card:not(:nth-child(-n + 2)) {
+    margin-top: $default-gap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__card {
+    flex-basis: calc(100% / 3 - 2 * #{$default-gap});
+    width: 370px;
+  }
+
+  .project__card:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .project__card:not(:nth-child(3n)) {
+    margin-right: $default-gap;
+  }
+
+  .project__card:not(:nth-child(-n + 3)) {
+    margin-top: $default-gap;
+  }
 }

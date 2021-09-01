@@ -1259,21 +1259,23 @@ a:active {
 }
 .projects__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .project__card {
-  flex-basis: calc(100% / 3 - 2 * 30px);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
 }
 
-.project__card:not(:nth-child(3n)) {
-  margin-right: 30px;
+.portfolio-icon {
+  width: 100%;
 }
 
-.project__card:not(:nth-child(-n+3)) {
+.project__card:not(:first-child) {
   margin-top: 30px;
 }
 
@@ -1358,16 +1360,80 @@ a:active {
   padding: 0;
 }
 
-.buttons__list {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__card {
+    flex-basis: calc(100% / 2 - 2 * 30px);
+    width: 354px;
+  }
+
+  .project__card:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .project__card:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .project__card:not(:nth-child(-n+2)) {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__card {
+    flex-basis: calc(100% / 3 - 2 * 30px);
+    width: 370px;
+  }
+
+  .project__card:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .project__card:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  .project__card:not(:nth-child(-n+3)) {
+    margin-top: 30px;
+  }
+}
+.portfolio-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+.buttons_item:not(:nth-child(-n+3)) {
+  margin-top: 15px;
 }
 
 .buttons_item:not(:last-child) {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .buttons_item {
+    margin-top: 0;
+  }
+
+  .buttons_item:not(:nth-child(-n+3)) {
+    margin-top: 0;
+  }
+}
 .mobile-menu {
   position: fixed;
   top: 0;
