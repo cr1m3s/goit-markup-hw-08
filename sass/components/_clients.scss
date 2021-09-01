@@ -1,3 +1,7 @@
+.clients-container {
+  @include flex-func(center, center, column, false);
+}
+
 .svg-list {
   @include flex-func(center, center, row, wrap);
   width: 450px;

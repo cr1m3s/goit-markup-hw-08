@@ -38,17 +38,21 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
-    @include flex-func(space-between, center, row, wrap);
+    @include flex-func(center, center, row, wrap);
   }
 
   .features__element {
     text-align: left;
-    flex-basis: calc(100% / 2 - 10px);
+    flex-basis: calc((100% - 2 * $default-gap) / 2);
     width: 354px;
   }
 
   .features__element:not(:nth-child(-n + 2)) {
     margin-top: $default-gap;
+  }
+
+  .features__element:not(:nth-child(2n)) {
+    margin-right: $default-gap;
   }
 
   .features__element:not(:last-child) {
