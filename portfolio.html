@@ -241,63 +241,77 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-content container">
-        <div>
-          <a href="index.html" class="logo"
-            ><span class="logo__text--blue">Web</span
-            ><span class="logo__text--white">Studio</span></a
-          >
-          <address class="contacts">
-            <ul>
-              <li class="contacts__address">
+      <div class="section footer-container">
+        <div class="footer-content container">
+          <div class="footer-content__logo">
+            <a href="index.html" class="logo"
+              ><span class="logo__text--blue">Web</span
+              ><span class="logo__text--white">Studio</span></a
+            >
+            <address class="contacts">
+              <ul>
+                <li class="contacts__address">
+                  <a
+                    href="https://www.google.com/maps/dir//Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265754,30.5032807,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2m2!1d30.5383858!2d50.4265807!3e0"
+                    class="contacts__link"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link">info@example.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-media">
+            <h4 class="footer-media__title">присоединяйтесь</h4>
+            <ul class="social-media">
+              <li class="social-media__item">
                 <a
-                  href="https://www.google.com/maps/dir//Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265754,30.5032807,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2m2!1d30.5383858!2d50.4265807!3e0"
-                  class="contacts__link"
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link">info@example.com</a>
+              <li class="social-media__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
+                >
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
+              <li class="social-media__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
+                >
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
+                >
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-media">
-          <h4 class="footer-media__title">присоединяйтесь</h4>
-          <ul class="social-media">
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-form">
           <p class="footer-form__name">Подпишитесь на рассылку</p>
@@ -307,7 +321,7 @@
             </label>
             <button type="submit" class="primary-button">
               <span>Подписаться</span>
-              <svg class="button__icon" width="24px" height="24px">
+              <svg class="primary-button__icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -315,5 +329,13 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
