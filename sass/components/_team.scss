@@ -3,7 +3,7 @@
 }
 
 .team__container {
-  @include flex-func(center, false, column, false);
+  @include flex-func(center, center, column, false);
 }
 
 .team__list {
@@ -45,7 +45,7 @@
   }
 
   .teammate {
-    flex-basis: calc(100% / 2 - 10px);
+    flex-basis: calc((100% - 2 * $default-gap) / 2);
     width: 354px;
   }
 
@@ -55,6 +55,10 @@
 
   .teammate:not(:nth-child(-n + 2)) {
     margin-top: $default-gap;
+  }
+
+  .teammate:not(:nth-child(2n)) {
+    margin-right: $default-gap;
   }
 }
 
@@ -69,5 +73,9 @@
 
   .teammate:not(:first-child) {
     margin-top: 0;
+  }
+
+  .teammate:not(:first-child) {
+    margin-left: $default-gap;
   }
 }

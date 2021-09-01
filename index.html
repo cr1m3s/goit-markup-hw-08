@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="/home/oleksii/node_modules/body-scroll-lock/lib/bodyScrollLock.js"></script>
+    <script src="/home/oleksii/node_modules/body-scroll-lock/lib/bodyScrollLock.js"></script>
   </head>
   <body>
     <header class="header">
@@ -54,16 +54,16 @@
           </li>
         </ul>
         <button class="menu-button js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
-          <svg class="menu-button__icon"  height="40px" width="40px">
+          <svg class="menu-button__icon" height="40px" width="40px">
             <use href="./images/symbol-defs.svg#menu-icon"></use>
           </svg>
         </button>
         <div class="mobile-menu js-menu-container">
-              <button class="mobile-menu__close js-close-menu">
-                <svg class="mobile-menu__icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-cross"></use>
-                </svg>
-              </button>
+          <button class="mobile-menu__close js-close-menu">
+            <svg class="mobile-menu__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
           <ul class="mobile-menu__nav">
             <li class="mobile-menu__link-item">
               <a href="index.html" class="mobile-menu__nav-link">Студия</a>
@@ -76,40 +76,30 @@
             </li>
           </ul>
           <div class="mobile-menu__bottom">
-          <ul class="mobile-menu__contacts">
-            <li class="mobile-menu__contact">
-              <a href="tel:+380961111111" class="mobile-menu__phone">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="mobile-menu__contact">
-              <a href="mailto:info@devstudio.com" class="mobile-menu__email">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-menu__social">
-            <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__media-link">
-                Instagram
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__contact">
+                <a href="tel:+380961111111" class="mobile-menu__phone"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-menu__contact">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__email">
+                  info@devstudio.com
                 </a>
-            </li >
-            <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__media-link">
-                Twitter
-                </a>
-            </li>
-                        <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__media-link">
-                Facebook
-                </a>
-            </li>
-                        <li class="mobile-menu__social-item">
-                <a href="" class="mobile-menu__media-link">
-                Linkedin
-                </a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__media-link"> Instagram </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__media-link"> Twitter </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__media-link"> Facebook </a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="" class="mobile-menu__media-link"> Linkedin </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -272,7 +262,12 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="teammate">
-              <img min-width="270" src="images/img1.jpg" alt="Product-Designer" class="teammate__pic" />
+              <img
+                min-width="270"
+                src="images/img1.jpg"
+                alt="Product-Designer"
+                class="teammate__pic"
+              />
               <h5 class="teammate__name">Игорь Демьяненко</h5>
               <p class="teammate__position">Product Designer</p>
               <ul class="social-media">
@@ -307,7 +302,12 @@
               </ul>
             </li>
             <li class="teammate">
-              <img min-width="270" src="images/img2.jpg" alt="Product-Designer" class="teammate__pic"/>
+              <img
+                min-width="270"
+                src="images/img2.jpg"
+                alt="Product-Designer"
+                class="teammate__pic"
+              />
               <h5 class="teammate__name">Ольга Репина</h5>
               <p class="teammate__position">Frontend Developer</p>
               <ul class="social-media">
@@ -342,7 +342,12 @@
               </ul>
             </li>
             <li class="teammate">
-              <img min-width="270" src="images/img3.jpg" alt="Product-Designer" class="teammate__pic" />
+              <img
+                min-width="270"
+                src="images/img3.jpg"
+                alt="Product-Designer"
+                class="teammate__pic"
+              />
               <h5 class="teammate__name">Николай Тарасов</h5>
               <p class="teammate__position">Marketing</p>
               <ul class="social-media">
@@ -377,7 +382,12 @@
               </ul>
             </li>
             <li class="teammate">
-              <img min-width="270" src="images/img4.jpg" alt="Product-Designer" class="teammate__pic" />
+              <img
+                min-width="270"
+                src="images/img4.jpg"
+                alt="Product-Designer"
+                class="teammate__pic"
+              />
               <h5 class="teammate__name">Михаил Ермаков</h5>
               <p class="teammate__position">UI Designer</p>
               <ul class="social-media">
@@ -414,7 +424,8 @@
           </ul>
         </div>
       </section>
-      <section class="section container">
+      <section class="section">
+        <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="svg-list">
             <li class="svg-list__item">
@@ -460,68 +471,81 @@
               </a>
             </li>
           </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="section footer-container">
-      <div class="footer-content">
-        <div class="footer-content__logo">
-          <a href="index.html" class="logo"
-            ><span class="logo__text--blue">Web</span
-            ><span class="logo__text--white">Studio</span></a
-          >
-          <address class="contacts">
-            <ul>
-              <li class="contacts__address">
+        <div class="footer-content">
+          <div class="footer-content__logo">
+            <a href="index.html" class="logo"
+              ><span class="logo__text--blue">Web</span
+              ><span class="logo__text--white">Studio</span></a
+            >
+            <address class="contacts">
+              <ul>
+                <li class="contacts__address">
+                  <a
+                    href="https://www.google.com/maps/dir//Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265754,30.5032807,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2m2!1d30.5383858!2d50.4265807!3e0"
+                    class="contacts__link"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link">info@example.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-media">
+            <h4 class="footer-media__title">присоединяйтесь</h4>
+            <ul class="social-media">
+              <li class="social-media__item">
                 <a
-                  href="https://www.google.com/maps/dir//Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265754,30.5032807,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!2m2!1d30.5383858!2d50.4265807!3e0"
-                  class="contacts__link"
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link">info@example.com</a>
+              <li class="social-media__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
+                >
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
+              <li class="social-media__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
+                >
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-media__link social-media__link_grey"
+                >
+                  <svg class="social-media__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-media">
-          <h4 class="footer-media__title">присоединяйтесь</h4>
-          <ul class="social-media">
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.facebook.com" class="social-media__link social-media__link_grey">
-                <svg class="social-media__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
         <div class="footer-form">
           <p class="footer-form__name">Подпишитесь на рассылку</p>
