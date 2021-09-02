@@ -1,7 +1,7 @@
 .top-bar {
   padding: 120px 0;
   height: 400px;
-  background-image: linear-gradient(to right, $bg-color, $bg-color), url('../images/img_bg.jpg');
+  background-image: linear-gradient(to right, $bg-color, $bg-color), url('../images/bg_mobile.jpg');
   background-color: $dark-bg;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, $bg-color, $bg-color),
-      url('../images/img_bg_2x.jpg');
+      url('../images/bg_mobile_2x.jpg');
   }
 }
 
@@ -30,11 +30,37 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .top-bar {
+    background-image: linear-gradient(to right, $bg-color, $bg-color),
+      url('../images/bg_tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $bg-color, $bg-color),
+        url('../images/bg_tablet_2x.jpg');
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .top-bar {
     height: 600px;
     padding-top: 200px;
     background-size: 1600px 600px;
+
+    background-image: linear-gradient(to right, $bg-color, $bg-color),
+      url('../images/bg_desktop.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $bg-color, $bg-color),
+        url('../images/bg_desktop_2x.jpg');
+    }
   }
 
   .banner__title {
