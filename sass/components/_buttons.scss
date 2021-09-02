@@ -16,8 +16,6 @@
   color: $white;
   cursor: pointer;
 
-  @include flex-func(center, center, row);
-
   transition: box-shadow $hover-timing $animation-func,
     background-color $hover-timing $animation-func;
 }
@@ -136,8 +134,12 @@
 
 .footer-button {
   margin: 0;
-
+  @include flex-func(center, center, row);
   @media screen and (min-width: 1199px) {
     margin-left: 12px;
   }
+}
+
+.input__button_submit {
+  text-align: center;
 }

@@ -4,7 +4,6 @@
 
 .footer-content {
   color: $white;
-  @include flex-func(center, center, column, false);
 }
 
 .footer {
@@ -14,7 +13,7 @@
 }
 
 .footer-content__logo {
-  @include flex-func(center, center, column, false);
+  text-align: center;
 }
 
 .contacts {
@@ -51,10 +50,6 @@
 .contacts__address:hover,
 .contacts__address:focus {
   color: $blue;
-}
-
-.footer-media {
-  @include flex-func(false, false, column, false);
 }
 
 .footer-media__title {

@@ -1,5 +1,5 @@
 .projects {
-  @include flex-func(center, center, false, false);
+  //@include flex-func(center, center, false, false);
   width: 100%;
 }
 .projects__list {
@@ -54,6 +54,7 @@
   text-align: left;
   @include flex-func(center, center, false, false);
   background-color: $blue;
+  opacity: 0;
 
   transform: translateY(100%);
   transition: transform $hover-timing $animation-func;
@@ -73,7 +74,8 @@
   transition: opacity $hover-timing $animation-func;
 }
 
-.card__link:hover .card__animation {
+.card__link:hover .card__animation,
+.card__link:focus .card__animation {
   transform: translateY(0);
   opacity: 0.9;
 }
