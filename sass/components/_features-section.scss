@@ -1,5 +1,14 @@
+.features {
+  @include flex-func(center, center, row, wrap);
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+  }
+}
+
 .features__list {
-  @include flex-func(center, center, column, false);
+  @include flex-func(center, center, row, wrap);
 }
 
 .features__element {
@@ -39,6 +48,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
     @include flex-func(center, center, row, wrap);
+    width: 768px;
   }
 
   .features__element {

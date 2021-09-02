@@ -133,3 +133,11 @@
 .mobile-menu__icon:hover {
   @include fill_func();
 }
+
+.footer-button {
+  margin: 0;
+
+  @media screen and (min-width: 1199px) {
+    margin-left: 12px;
+  }
+}

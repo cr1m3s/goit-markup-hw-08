@@ -1,7 +1,11 @@
+.projects {
+  @include flex-func(center, center, false, false);
+  width: 100%;
+}
 .projects__list {
-  @include flex-func(center, center, false, wrap);
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .project__card {
@@ -10,7 +14,7 @@
 }
 
 .portfolio-icon {
-  width: 100%;
+  width: 450px;
 }
 
 .project__card:not(:first-child) {
@@ -20,7 +24,7 @@
 .card__link {
   position: relative;
   overflow: hidden;
-  @include flex-func(false, false, column, false);
+  display: block;
 }
 
 .card__link:hover,
@@ -101,8 +105,16 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects__list {
+    @include flex-func(space-between, center, false, wrap);
+  }
+
   .project__card {
-    flex-basis: calc(100% / 2 - 2 * #{$default-gap});
+    flex-basis: calc(100% / 2 - #{$default-gap});
+    width: 354px;
+  }
+
+  .portfolio-icon {
     width: 354px;
   }
 
@@ -120,8 +132,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .projects__list {
+    @include flex-func(space-between, center, false, wrap);
+  }
+
   .project__card {
     flex-basis: calc(100% / 3 - 2 * #{$default-gap});
+    width: 370px;
+  }
+
+  .portfolio-icon {
     width: 370px;
   }
 

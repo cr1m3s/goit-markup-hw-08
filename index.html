@@ -65,7 +65,7 @@
             </svg>
           </button>
           <ul class="mobile-menu__nav">
-            <li class="mobile-menu__link-item">
+            <li class="mobile-menu__link-item current">
               <a href="index.html" class="mobile-menu__nav-link">Студия</a>
             </li>
             <li class="mobile-menu__link-item">
@@ -181,52 +181,54 @@
         </div>
       </section>
       <section class="container section">
-        <ul class="features__list">
-          <li class="features__element">
-            <div class="features__svg-container">
-              <svg width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
-              </svg>
-            </div>
-            <h3 class="features__title">Внимание к деталям</h3>
-            <p class="features__description">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li class="features__element">
-            <div class="features__svg-container">
-              <svg width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-clock-1"></use>
-              </svg>
-            </div>
-            <h3 class="features__title">Пунктуальность</h3>
-            <p class="features__description">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li class="features__element">
-            <div class="features__svg-container">
-              <svg width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
-              </svg>
-            </div>
-            <h3 class="features__title">Планирование</h3>
-            <p class="features__description">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li class="features__element">
-            <div class="features__svg-container">
-              <svg width="70px" height="70px">
-                <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
-              </svg>
-            </div>
-            <h3 class="features__title">Современные технологии</h3>
-            <p class="features__description">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="features">
+          <ul class="features__list">
+            <li class="features__element">
+              <div class="features__svg-container">
+                <svg width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__description">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="features__element">
+              <div class="features__svg-container">
+                <svg width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__description">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="features__element">
+              <div class="features__svg-container">
+                <svg width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__description">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="features__element">
+              <div class="features__svg-container">
+                <svg width="70px" height="70px">
+                  <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__description">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="container service">
         <h2 class="section__title">Чем мы занимаемся</h2>
@@ -476,7 +478,7 @@
     </main>
     <footer class="page-footer">
       <div class="section footer-container">
-        <div class="footer-content container">
+        <div class="footer-content">
           <div class="footer-content__logo">
             <a href="index.html" class="logo"
               ><span class="logo__text--blue">Web</span
@@ -553,7 +555,7 @@
             <label class="footer-form__label">
               <input type="email" name="email" class="footer-form__input" placeholder="E-mail" />
             </label>
-            <button type="submit" class="primary-button">
+            <button type="submit" class="primary-button footer-button">
               <span>Подписаться</span>
               <svg class="primary-button__icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-send"></use>

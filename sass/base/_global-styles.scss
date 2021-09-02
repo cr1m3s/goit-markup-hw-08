@@ -1,4 +1,4 @@
-@media screen and (min-width: 321px) {
+@media screen and (max-width: 479px) {
   html {
     overflow-x: hidden;
   }
@@ -41,25 +41,13 @@ a:active {
 
 .container {
   width: 100vw;
-  padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    width: 738px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 

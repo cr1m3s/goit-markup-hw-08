@@ -3,7 +3,7 @@
 }
 
 .team__container {
-  @include flex-func(center, center, column, false);
+  display: block;
 }
 
 .team__list {
@@ -40,8 +40,13 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__container {
+    @include flex-func(center, center, column, false);
+    width: 768px;
+  }
+
   .team__list {
-    @include flex-func(space-between, center, row, wrap);
+    @include flex-func(center, center, row, wrap);
   }
 
   .teammate {
@@ -63,6 +68,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .team__container {
+    @include flex-func(center, center, column, false);
+    width: 768px;
+  }
+
   .team__list {
     @include flex-func(space-between, center, row, false);
   }
