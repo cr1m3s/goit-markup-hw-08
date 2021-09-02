@@ -1411,6 +1411,7 @@ a:active {
 
   .portfolio-icon {
     width: 354px;
+    height: 294px;
   }
 
   .project__card:not(:first-child) {
