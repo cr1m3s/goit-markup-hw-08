@@ -118,6 +118,11 @@
     @include flex-func(center, center, column, false);
   }
 
+  .footer-media,
+  .footer-content__logo {
+    width: 50%;
+  }
+
   .footer-content {
     @include flex-func(space-between, flex-start, row, false);
     width: 738px;
