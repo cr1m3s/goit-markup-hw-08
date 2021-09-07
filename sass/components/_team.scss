@@ -70,7 +70,7 @@
 @media screen and (min-width: 1200px) {
   .team__container {
     @include flex-func(center, center, column, false);
-    width: 768px;
+    width: 1200px;
   }
 
   .team__list {
